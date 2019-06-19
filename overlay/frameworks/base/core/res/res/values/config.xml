@@ -569,4 +569,7 @@
    <!-- Whether device has a physical display cutout -->
    <bool name="config_physicalDisplayCutout">true</bool>
 
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
+
 </resources>
