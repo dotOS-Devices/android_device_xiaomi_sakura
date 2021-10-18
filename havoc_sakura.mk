@@ -9,7 +9,7 @@
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
@@ -30,12 +30,12 @@ $(call inherit-product, vendor/custom/prebuilts/config.mk)
 # Inherit from sakura device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
-# Inherit some common exTHmUI stuff.
-$(call inherit-product, vendor/exthm/config/common.mk)
+# Inherit some common HavocOS stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := exthm_sakura
+PRODUCT_NAME := havoc_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
