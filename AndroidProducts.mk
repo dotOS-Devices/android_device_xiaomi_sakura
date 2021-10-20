@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_sakura.mk
+    $(LOCAL_DIR)/fluid_sakura.mk

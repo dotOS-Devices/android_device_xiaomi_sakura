@@ -30,12 +30,12 @@ $(call inherit-product, vendor/custom/prebuilts/config.mk)
 # Inherit from sakura device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
-# Inherit some common HavocOS stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common FluidOS stuff.
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := havoc_sakura
+PRODUCT_NAME := fluid_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
@@ -44,3 +44,10 @@ TARGET_VENDOR := Xiaomi
 
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps
+TARGET_INCLUDE_GAPPS := true
+
+# Fluid Specific props
+ro.fluid.cpu=SD625
+ro.fluid.maintainer=abhigyan16
